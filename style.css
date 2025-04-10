@@ -94,9 +94,11 @@ header {
     border-radius: 0.6rem;
   }
   .nav-link {
-    font-size: 1.8rem;
+    font-size: 3.2rem;
     color: #fff;
     cursor: pointer;
+    font-family: "Italianno", cursive;
+
   }
   /* header ends here  */
 
@@ -254,6 +256,70 @@ header {
   width: 30%;
 }
 /* blog-posts ends here  */
+/* contact section starts here  */
+#contact-section {
+  min-height: 90vh;
+}
+#contact-form {
+  padding: 1rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222;
+  margin: 1rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  background-color: #2F4410;
+
+}
+.form-control {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-control label {
+  font-size: 1.6rem;
+  flex: 0.3;
+}
+input,
+textarea {
+  flex: 0.7;
+  width: 40rem;
+  font-size: 1.6rem;
+  padding: 2rem 1rem;
+  border: none;
+  border-radius: 0.6rem;
+}
+textarea {
+  resize: none;
+  height: 12vh;
+}
+.form-btn-field {
+  display: flex;
+  justify-content: flex-end;
+}
+.contact-btn {
+  width: 30%;
+}
+/* contact section ends here  */
+/* footer starts here  */
+footer {
+  background-color: #2F4410;
+  padding: 1rem;
+
+  min-height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright-text {
+  font-size: 1.5rem;
+  color: #fff;
+  
+}
+.footer-icon {
+  font-size: 2.5rem;
+}
+/* footer ends here  */
 
 /* responsive starts here  */
 @media (max-width: 992px) {
@@ -291,6 +357,9 @@ header {
       flex-direction: column;
       margin-bottom: 3rem;
       width: 80%;
+    }
+    #contact-section {
+      min-height: auto;
     }}
 
 
@@ -336,4 +405,20 @@ header {
     .blog-post {
       width: 90%;
     }  
+    #contact-form {
+      width: 90%;
+    }
+    #menu-icon {
+      display: block;
+      margin-top: 1.5rem;
+      cursor: pointer;
+    }footer {
+      flex-direction: column;
+    }
+    #menubar2 {
+      display: flex;
+    }
+    .hidden {
+      display: none;
+    }
   }
