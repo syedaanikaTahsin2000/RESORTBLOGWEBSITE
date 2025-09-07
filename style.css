@@ -73,6 +73,7 @@ header {
   
   .logo-figure {
     border: 1px solid #fff;
+    border-radius: 50px;
   }
   .logo {
     font-size: 4rem;
@@ -261,13 +262,15 @@ header {
   min-height: 90vh;
 }
 #contact-form {
-  padding: 1rem;
+  padding: 3rem;
   box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222;
   margin: 1rem;
   color: #fff;
   display: flex;
   flex-direction: column;
   background-color: #2F4410;
+    border-radius: 30px;
+
 
 }
 .form-control {
@@ -275,6 +278,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 7px;
 }
 .form-control label {
   font-size: 1.6rem;
@@ -405,9 +409,39 @@ footer {
     .blog-post {
       width: 90%;
     }  
-    #contact-form {
-      width: 90%;
-    }
+     #contact-form {
+    width: 65%;
+    padding: 2rem;
+  }
+
+  .form-control {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-control label {
+    flex: unset;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+        margin: 10px;
+
+  }
+
+  input,
+  textarea {
+    flex: unset;
+    width: 100%;
+  }
+
+  .form-btn-field {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .contact-btn {
+    width: 100%;
+  }
+}
     #menu-icon {
       display: block;
       margin-top: 1.5rem;
@@ -421,4 +455,4 @@ footer {
     .hidden {
       display: none;
     }
-  }
+  
